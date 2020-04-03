@@ -21,3 +21,5 @@ eureka:
     #\u5355\u673A\u7248
        defaultZone: http://localhost:7001/eureka
     #\u96C6\u7FA4\u7248
+config:
+  info: 111111111
