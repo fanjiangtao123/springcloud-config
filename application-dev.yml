@@ -1,0 +1,23 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fanjiangtao123/springcloud-config
+          username: fanjiangtao123
+          password: 123fanjiangtao
+          label: master
+eureka:
+  client:
+    #\u8868\u793A\u662F\u5426\u5C06\u81EA\u5DF1\u6CE8\u518C\u8FDBEurekaServer \u9ED8\u8BA4true
+    register-with-eureka: true
+    #\u662F\u5426Eurekaserver\u4F4F\u533A\u81EA\u5DF1\u6709\u7684\u6CE8\u518C\u4FE1\u606F
+    fetch-registry: true
+    service-url:
+    #\u5355\u673A\u7248
+       defaultZone: http://localhost:7001/eureka
+    #\u96C6\u7FA4\u7248
